@@ -1,0 +1,276 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+    font-family: Montserrat, Lato, Arial, sans-serif;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/sans-serif/lato-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/sans-serif/montserrat-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Opensans;
+    src: url(../fonts/sans-serif/opensans-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/sans-serif/roboto-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Josefinslab;
+    src: url(../fonts/serif/josefinslab-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Robotoslab;
+    src: url(../fonts/serif/robotoslab-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Rozhaone;
+    src: url(../fonts/serif/rozhaone-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Ultra;
+    src: url(../fonts/serif/ultra-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main {
+
+}
+
+/* Section */
+
+section {
+
+}
+
+.main-section {
+    display: flex;
+}
+
+.subsection {
+    display: flex;
+}
+
+/* Article */
+
+article {
+    padding-right: 1rem;
+    flex: 5;
+}
+
+/* Figure */
+
+figure {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.article-image {
+    float: left;
+    width: 15rem;
+}
+
+figure img {
+    width:100%;
+    max-width: 50rem;
+    margin-bottom: 0rem;
+}
+
+figcaption {
+    font-size: 0.75rem;
+    background-color: beige;
+    margin-top: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Navigation Bar */
+
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    font-size: 1.25rem;
+    word-spacing: 2rem;
+}
+
+/* Footer */
+
+footer {
+    clear: both;
+    font-size: 0.5rem;
+    overflow: auto;
+}
+
+.copyright {
+    float: left;
+}
+
+.attribution {
+    text-align: right;
+}
+
+/* Headers */
+
+header {
+    text-align: center;
+}
+
+h1 {
+    transform: rotate(-5deg);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.highlight {
+    display: inline-block;
+    border: solid;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+/* Paragraphs */
+
+p {
+
+}
+
+time {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+
+}
+
+a:focus,
+a:hover {
+
+}
+
+.expand {
+    font-size: 0.5rem;
+}
+
+/* Aside */
+
+aside {
+    padding-left: 1rem;
+    border-left-style: solid;
+    flex: 1;
+}
+
+aside > img {
+    width: 100%;
+}
+
+aside > p {
+    font-size: 0.625rem;
+    padding-bottom: 1rem;
+    border-bottom-style: solid;
+}
